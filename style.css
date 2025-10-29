@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Poppins:wght@300;400;500&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: url('fundo-preto-e-branco-ondulado.jpg') ;
+    background-size: cover;
+    color: #fff;
+}
+
+header {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 15px 0;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: #ccc;
+    font-weight: 400;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    transition: 0.3s;
+}
+
+.menu li a:hover,
+.menu li a.active {
+    color: #fff;
+    border-bottom: 2px solid #aaa;
+}
+
+.home .content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    gap: 60px;
+    flex-wrap: wrap;
+}
+
+.logo {
+    width: 280px;
+    border-radius: 10px;
+}
+
+.logo.pequena {
+    display: block;
+    margin: 40px auto;
+    width: 180px;
+}
+
+.foto {
+    width: 280px;
+    border-radius: 60%;
+    object-fit: fixed;
+    background: none;
+}
+
+/* -------- SEÇÃO SOBRE MIM -------- */
+
+.sobre {
+    max-width: 800px;
+    margin: 50px auto;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+    text-align: center;
+    animation: fadeIn 1.2s ease-in-out;
+}
+
+.sobre h1 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.sobre p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.05rem;
+    color: #ddd;
+    line-height: 1.8;
+}
+
+/* -------- LISTA DE PROCEDIMENTOS -------- */
+
+.lista-procedimentos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    padding: 40px;
+}
+
+.card {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.15);
+}
+
+.card h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.6rem;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.card p {
+    color: #ccc;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+.card ul {
+    color: #aaa;
+    margin-left: 20px;
+    font-size: 0.95rem;
+}
+
+/* -------- CONTATO -------- */
+
+.contato .infos {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.contato h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.contato a {
+    color: #fff;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.contato a:hover {
+    color: #aaa;
+}
+
+/* -------- ANIMAÇÃO SUAVE -------- */
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
